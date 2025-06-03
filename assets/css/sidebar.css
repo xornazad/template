@@ -1,0 +1,125 @@
+.pad-10{
+  padding: 0px 10% 0px 10%;
+}
+.pad-10 span{
+  margin-left: -13px;
+  font-weight: bold;
+}
+.ser-input{
+  border-radius: 12px;
+  width: 250px;
+}
+.service{
+  border: 1px solid #4F4F4F;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+.service div{
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  color: #4F4F4F;
+  font-weight: bold;
+}
+.service a{
+  text-decoration: none;
+}
+.button{
+    border: 1px solid #4F4F4F;
+    text-align: center;
+}
+.follow{
+    border: 1px solid #4F4F4F;
+    text-align: center;
+    height: 80px;
+    padding-top: 27px;
+}
+.container {
+  width: 100%;
+}
+.row {
+  display: flex;
+}
+.sidebar {
+  background-color: #4db8ff;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+}
+.body {
+  background-color: #4F4F4F;
+  color: #4F4F4F;
+  padding: 0px 0px 0px 20px;
+  height: 100vh;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.logout-btn {
+  background: gray;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+.chat-box {
+  background-color: white;
+  height: 100%;
+  padding: 10px;
+
+  /* height: 100vh; */
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+.message.from {
+  background-color: #eee;
+  text-align: left;
+}
+.message.to {
+  background-color: #d0eaff;
+  text-align: right;
+}
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-input input {
+  width: 90%;
+  padding: 5px;
+}
+#toggleSidebarBtn {
+  position: absolute;
+  top: 48px;
+  left: 338px;
+  z-index: 999;
+  color: white;
+}
+.ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .ul li {
+    margin-bottom: 15px;
+  }
+/* #toggleSidebarBtn {
+  transition: left 0.3s ease;
+} */
+@media screen and (max-width: 992px) {
+  #toggleSidebarBtn {
+    position: absolute;
+    top: 48px;
+    left: 170px;
+    z-index: 999;
+  }
+}

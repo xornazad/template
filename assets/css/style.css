@@ -1,0 +1,109 @@
+.table{
+  text-align: center;
+}
+th,td{
+  color: #4F4F4F !important;
+  font-size: 14px;
+}
+.main-nav{
+    height: 50px;
+    border-bottom: 5px solid #7ECEF4;
+    padding-top: 10px;
+}
+.nav-brand-l{
+    color: #2F318E;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-brand-m{
+    color: #7ECEF4;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-brand-r{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.login-form{
+    background: #7ECEF4;
+    border-radius: 10px;
+    color: white;
+    height: 380;
+    width: 450px;
+    margin-top: 80px;
+    border-radius: 15px;
+    margin-left: 30%;
+    font-weight: bold;
+    padding: 0px 35px 20px 35px;
+    box-shadow: 0 8px 15px -10px #000000;
+}
+.text-center{
+    text-align: center;
+}
+.default-btn{
+    background: #4F4F4F;
+    padding: 0px 20px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+.logout{
+  background: #B6B6B6;
+  border-radius: 10px;
+  height: 35px;
+  margin-top: -5px;
+  padding: 4px 5px 0px 5px;
+}
+.ml-70{
+  margin-left:70px ;
+}
+.login-group{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1199px) {
+  .login-form{
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .login-form{
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 766px) {
+  .login-form{
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .login-form{
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login-form{
+    margin-left: 12%;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .login-form{
+    margin-left: 7%;
+    width: 355px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .login-form{
+    margin-left: 5%;
+    width: 355px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .login-form{
+    margin-left: 10px;
+  }
+}

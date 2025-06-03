@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <title>Company name search</title>
+</head>
+<body>
+    <div class="main-nav">
+        <div class="container">
+            <div class="row">   
+                <div class="col-7">
+                    <img height="35px" src="../assets/img/logo/izumi-logo.png" alt="izumi-logo">
+                    <a class="navbar-brand" href="#"><span class="nav-brand-l">IZUMI</span><span class="nav-brand-m">Connect</span><span class="nav-brand-r"> ホーム画面</span></a>
+                </div>
+                <div class="col-5">
+                    <div class="login-group">
+                        <div class="logout">ユーザー名：<button class="btn default-btn ml-70" type="button">log out</button></div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Toggle Button -->
+    <div>
+        <button id="toggleSidebarBtn" class="btn"><img id="toggleIcon" src="../assets/img/polygon-r.png" alt=""></button>
+        <div class="row" style="width: 100%;">
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar col-3">
+                <ul class="ul">
+                    <li>TOP画面</li>
+                    <li>顧客検索</li>
+                    <li>車両検索</li>
+                    <li>車両検索</li>
+                    <li>経過観察一覧</li>
+                    <li>経過観察追加</li>
+                    <li>後日整備一覧</li>
+                    <li>後日整備入力</li>
+                </ul>
+            </div>
+            <!-- Chat Body -->
+            <div id="chatBody" class="body col-9">
+                <div class="chat-box">
+                    <div class="chat-header">
+                        <div>ホーム <span>＞　顧客検索</span></div>
+                    </div>
+                    <!-- Sample message -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pad-10">
+                                <div style="font-weight: bold;">社名検索</div>
+                                <div class="row">
+                                    <div class="col-6 ">
+                                        <input class="ser-input" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-4">
+                                <div style="font-weight: bold;">社名検索一覧</div>
+                                <div class="row" style="height: 200px;">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr style="border-bottom: 1px solid #4F4F4F;">
+                                                <th>No</th>
+                                                <th>社名</th>
+                                                <th>部署名</th>
+                                                <th>車両数</th>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>1</td>
+                                                <td>樫原運送</td>
+                                                <td>総務部</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>2</td>
+                                                <td>樫原運送</td>
+                                                <td>総務部</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>3</td>
+                                                <td>樫原運送</td>
+                                                <td>総務部</td>
+                                                <td>13</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
