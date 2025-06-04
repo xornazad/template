@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <title>Follow-up progress report screen</title>
+</head>
+<body>
+    <div class="main-nav">
+        <div class="container">
+            <div class="row">   
+                <div class="col-7">
+                    <img height="35px" src="../assets/img/logo/izumi-logo.png" alt="izumi-logo">
+                    <a class="navbar-brand" href="#"><span class="nav-brand-l">IZUMI</span><span class="nav-brand-m">Connect</span><span class="nav-brand-r">  経過観察進行報告画面</span></a>
+                </div>
+                <div class="col-5">
+                    <div class="login-group">
+                        <div class="logout">ユーザー名：<button class="btn default-btn ml-70" type="button">log out</button></div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Toggle Button -->
+    <div>
+        <button id="toggleSidebarBtn" class="btn"><img id="toggleIcon" src="../assets/img/polygon-r.png" alt=""></button>
+        <div class="row" style="width: 100%;">
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar col-3">
+                <ul class="ul">
+                    <li>TOP画面</li>
+                    <li>顧客検索</li>
+                    <li>車両検索</li>
+                    <li>車両検索</li>
+                    <li>経過観察一覧</li>
+                    <li>経過観察追加</li>
+                    <li>後日整備一覧</li>
+                    <li>後日整備入力</li>
+                </ul>
+            </div>
+            <!-- Chat Body -->
+            <div id="chatBody" class="body col-9">
+                <div class="chat-box">
+                    <div class="chat-header">
+                        <div>ホーム <span>＞　顧客検索</span><span>＞　車両検索</span><span>＞　経過観察一覧</span><span>＞　経過観察進行報告</span></div>
+                    </div>
+                    <!-- Sample message -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pad-10 mt-4">
+                                
+                                <div class="row">
+                                    <div class="col-7 ">
+                                      <div style="font-weight: bold;font-size: 14px;">袖ヶ浦100か8263の経過観察　No.1</div>
+                                        <!-- <input class="ser-input" type="text"> -->
+                                        <div style="font-size: 13px;">作成日：2025/1/31 更新日：2025/4/5</div>
+                                    </div>
+                                    <div class="col-5 ">
+                                      <div class="row">
+                                        <div class="col-10">
+                                          <div class="com">
+                                            <button class="com-title">顧客へ共有</button>
+                                          </div>
+                                        </div>
+                                        <div class="col-2">
+                                          <div class="com-r">
+                                            <button class="com-btn"></button></div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-3">
+                                <div style="font-weight: bold;">ステータス</div>
+                                <div class="row">
+                                    <div class="col-10">
+                                      <div class="fol-div" style="text-align: center;">
+                                        <select class="fol-select" ser-input name="" id="">
+                                          <option value="">連携前</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-3">
+                                <div style="font-weight: bold;">不具合内容</div>
+                                <div class="row">
+                                    <div class="col-10 ">
+                                        <input style="background: #D9D9D9;color: #4F4F4F;" class="ser-input" type="text" placeholder="ﾀｲﾔ溝残量少ない（要交換）" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-3">
+                                <div style="font-weight: bold;">概算見積もり</div>
+                                <div class="row">
+                                    <div class="col-10 ">
+                                        <input class="ser-input" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-3">
+                                <span>画像・動画添付</span>
+                                <div class="row chat">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3"></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-1 chat-r"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="chat-input">
+                                            <input type="text" maxlength="50" placeholder="メッセージを入力">
+                                            <span>0/50</span><img height="30px" src="../assets/img/send.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-3">
+                                <span>チャット</span>
+                                <div class="row chat">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3"></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-1 chat-r"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="chat-input">
+                                            <input type="text" maxlength="50" placeholder="メッセージを入力">
+                                            <span>0/50</span><img height="30px" src="../assets/img/send.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10 mt-4">
+                                <div style="font-weight: bold;">経過観察一覧</div>
+                                <div style="text-align: right;"><button class="add-btn">追加する+</button></div>
+                                <div class="row" style="height: 200px;">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr style="border-bottom: 1px solid #4F4F4F;">
+                                                <th>No</th>
+                                                <th>不具合内容</th>
+                                                <th>ステータス</th>
+                                                <th>初回登録日</th>
+                                                <th>更新日</th>
+                                                <th>連携</th>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>1</td>
+                                                <td>オイル漏れ</td>
+                                                <td>凛議待ち</td>
+                                                <td>2025/1/31</td>
+                                                <td>2025/3/15</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>2</td>
+                                                <td>オイル漏れ</td>
+                                                <td>凛議待ち</td>
+                                                <td>2025/1/31</td>
+                                                <td>2025/3/15</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>3</td>
+                                                <td>オイル漏れ</td>
+                                                <td>凛議待ち</td>
+                                                <td>2025/1/31</td>
+                                                <td>2025/3/15</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>4</td>
+                                                <td>オイル漏れ</td>
+                                                <td>凛議待ち</td>
+                                                <td>2025/1/31</td>
+                                                <td>2025/3/15</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                            <tr style="border-bottom: 1px solid white;">
+                                                <td>1</td>
+                                                <td>オイル漏れ</td>
+                                                <td>凛議待ち</td>
+                                                <td>2025/1/31</td>
+                                                <td>2025/3/15</td>
+                                                <td><input type="checkbox"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
