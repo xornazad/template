@@ -1,9 +1,9 @@
-const toggleBtn = document.getElementById("toggleSidebarBtn");
+  const toggleBtn = document.getElementById("toggleSidebarBtn");
+  const side = document.getElementById("side");
   const toggleIcon = document.getElementById("toggleIcon");
   const sidebar = document.getElementById("sidebar");
   const chatBody = document.getElementById("chatBody");
   const image = document.getElementById("image");
-  const bodyContent = document.querySelector(".body");
   let isSidebarVisible = true;
 const screenWidth = window.innerWidth;
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,24 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleIcon.src = newIcon;
 
     if (sidebar.classList.contains("d-none")) {
+      
+      side.style.marginLeft = "12px"
       chatBody.classList.remove("col-9");
-      chatBody.classList.add("col-12");
-      bodyContent.style.paddingLeft = "35px";
+      chatBody.classList.add("col-11");
     } else {
-      chatBody.classList.remove("col-12");
+      
+      side.style.marginLeft = "0px"
+      chatBody.classList.remove("col-11");
       chatBody.classList.add("col-9");
-      bodyContent.style.paddingLeft = "20px";
     }
 
     
   if (screenWidth < 1050 && screenWidth > 992) {
     if (isSidebarVisible) {
-      toggleBtn.style.left = "-7px";
       if(image !==null){
         image.style.height ="520px";
       }
     } else {
-      toggleBtn.style.left = "234px";
       if(image !==null){
         image.style.height ="385px";
       }
@@ -62,12 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }else if (screenWidth < 992 && screenWidth > 800) {
     // Mobile/tablet screen
     if (isSidebarVisible) {
-      toggleBtn.style.left = "-7px";
       if(image !==null){
         image.style.height ="385px";
       }
     } else {
-      toggleBtn.style.left = "182px";
       if(image !==null){
         image.style.height ="300px";
       }
@@ -75,12 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if(screenWidth < 800){
         // Desktop screen
         if (isSidebarVisible) {
-        toggleBtn.style.left = "-7px";
         if(image !==null){
           image.style.height ="400px";
         }
         } else {
-          toggleBtn.style.left = "170px";
           if(image !==null){
             image.style.height ="300px";
           }
@@ -88,12 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }else{
       // Desktop screen
         if (isSidebarVisible) {
-        toggleBtn.style.left = "-7px";
         if(image !==null){
           image.style.height ="750px";
         }
         } else {
-        toggleBtn.style.left = "338px";
         if(image !==null){
           image.style.height ="565px";
         }

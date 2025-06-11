@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">   
                 <div class="col-7">
-                    <img height="35px" src="../assets/img/logo/izumi-logo.png" alt="izumi-logo">
+                    <img style="margin-bottom: 5px;" height="35px" src="../assets/img/logo/izumi-logo.png" alt="izumi-logo">
                     <a class="navbar-brand" href="#"><span class="nav-brand-l">IZUMI</span><span class="nav-brand-m">Connect</span><span class="nav-brand-r">  経過観察進行報告画面</span></a>
                 </div>
                 <div class="col-5">
@@ -26,10 +26,10 @@
     </div>
     <!-- Toggle Button -->
     <div>
-        <button id="toggleSidebarBtn" class="btn"><img id="toggleIcon" src="../assets/img/polygon-r.png" alt=""></button>
+        
         <div class="row" style="width: 100%;">
             <!-- Sidebar -->
-            <div id="sidebar" class="sidebar col-3">
+            <div id="sidebar" class="sidebar col-2">
                 <ul class="ul">
                     <li>TOP画面</li>
                     <li>顧客検索</li>
@@ -40,6 +40,9 @@
                     <li>後日整備一覧</li>
                     <li>後日整備入力</li>
                 </ul>
+            </div>
+            <div id="side" class="sidebar col-1" style="width: 25px;background: #4F4F4F; padding: 0px;">
+                <button  id="toggleSidebarBtn" class="btn"><img id="toggleIcon" src="../assets/img/polygon-r.png" alt=""></button>
             </div>
             <!-- Chat Body -->
             <div id="chatBody" class="body col-9">
@@ -103,32 +106,16 @@
                             </div>
                             <div class="col-12 pad-10 mt-3">
                                 <span>画像・動画添付</span>
-                                <div class="row chat">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-3"></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-1 chat-r"><img height="30px" src="../assets/img/message.png" alt=""></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="chat-input">
-                                            <input type="text" maxlength="50" placeholder="メッセージを入力">
-                                            <span>0/50</span><img height="30px" src="../assets/img/send.png" alt="">
+                                <div style="height: 50px;" class="row chat">
+                                    <div>
+                                        <button class="btn attach-btn "><img width="20px" src="../assets/img/attach.png" alt="">添付する+</button>
+                                        <button style="margin-left: 20px;" class="btn attach-btn"><img width="20px" src="../assets/img/delete.png" alt="">削除するー</button>
+                                    </div> 
+                                </div>
+                                
+                                <div style="margin-top: -50px;" class="row chat">
+                                    <div style="margin-top: 50px;" class="col-12">
+                                        <img height="100px" src="../assets/img/attach.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -136,6 +123,9 @@
                             <div class="col-12 pad-10 mt-3">
                                 <span>チャット</span>
                                 <div class="row chat">
+                                    <div style="text-align: center;" class="col-12">
+                                    <button style="width: 80px;" class="btn attach-btn">今日</button>
+                                    </div>
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>

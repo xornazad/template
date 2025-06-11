@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
-    <title>Company name search</title>
+    <title>Chat list (draft)</title>
 </head>
 <body>
     <div class="main-nav">
@@ -45,10 +45,11 @@
             </div>
             <!-- Chat Body -->
             <div id="chatBody" class="body col-9">
+                <div style="border: 1px solid #4F4F4F; height: 35px;" class="chat-header">
+                    <div>ホーム <span>＞　顧客検索</span><span>＞　車両検索</span></div>
+                </div>
                 <div class="chat-box">
-                    <div class="chat-header">
-                        <div>ホーム <span>＞　顧客検索</span></div>
-                    </div>
+                    
                     <!-- Sample message -->
                     <div class="container">
                         <div class="row">
@@ -61,35 +62,41 @@
                                 </div>
                             </div>
                             <div class="col-12 pad-10 mt-4">
-                                <div style="font-weight: bold;">社名検索一覧</div>
-                                <div class="row" style="height: 200px;">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <tr style="border-bottom: 1px solid #4F4F4F;">
-                                                <th>No</th>
-                                                <th>社名</th>
-                                                <th>部署名</th>
-                                                <th>車両数</th>
-                                            </tr>
-                                            <tr style="border-bottom: 1px solid white;">
-                                                <td>1</td>
-                                                <td>樫原運送</td>
-                                                <td>総務部</td>
-                                                <td>30</td>
-                                            </tr>
-                                            <tr style="border-bottom: 1px solid white;">
-                                                <td>2</td>
-                                                <td>樫原運送</td>
-                                                <td>総務部</td>
-                                                <td>18</td>
-                                            </tr>
-                                            <tr style="border-bottom: 1px solid white;">
-                                                <td>3</td>
-                                                <td>樫原運送</td>
-                                                <td>総務部</td>
-                                                <td>13</td>
-                                            </tr>
-                                        </table>
+                                <div style="font-weight: bold;">登録番号検索</div>
+                                <div class="row">
+                                    <div class="col-6 ">
+                                        <input class="ser-input" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pad-10">
+                                <span>チャット</span>
+                                <div class="row chat">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3"></div>
+                                            <div class="col-9"><div class="button">draft</div></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                            <div class="col-8"><div class="button">draft</div></div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="chat-input">
+                                            <input type="text" maxlength="50" placeholder="メッセージを入力">
+                                            <span>0/50</span><img height="30px" src="../assets/img/send.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

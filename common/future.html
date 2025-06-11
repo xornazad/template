@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
-    <title>Progress Observation List Screen (Customer)</title>
+    <title>Future maintenance list screen</title>
 </head>
 <body>
     <div class="main-nav">
@@ -14,7 +14,11 @@
             <div class="row">   
                 <div class="col-7">
                     <img style="margin-bottom: 5px;" height="35px" src="../assets/img/logo/izumi-logo.png" alt="izumi-logo">
-                    <a class="navbar-brand" href="#"><span class="nav-brand-l">IZUMI</span><span class="nav-brand-m">Connect</span><span class="nav-brand-r"> 経過観察一覧画面</span></a>
+                    <a class="navbar-brand" href="#">
+                        <span class="nav-brand-l">IZUMI</span>
+                        <span class="nav-brand-m">Connect</span>
+                        <span class="nav-brand-r">  程度更新画面</span>
+                    </a>
                 </div>
                 <div class="col-5">
                     <div class="login-group">
@@ -47,65 +51,60 @@
             <div id="chatBody" class="body col-9">
                 <div class="chat-box">
                     <div class="chat-header">
-                        <div>ホーム <span>＞　顧客検索</span><span>＞　車両検索</span><span>＞　経過観察一覧</span></div>
+                        <div>ホーム 
+                            <span>＞　顧客検索</span>
+                        </div>
                     </div>
                     <!-- Sample message -->
                     <div class="container">
                         <div class="row">
                             <div class="col-12 pad-10 mt-4">
-                                <div style="font-weight: bold;">登録番号</div>
+                                
                                 <div class="row">
-                                    <div class="col-6 ">
-                                        <!-- <input class="ser-input" type="text"> -->
-                                         <p>袖ヶ浦100か8263</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 pad-10">
-                                <span>チャット</span>
-                                <div class="row chat">
-                                    <div class="col-12">
+                                    <div class="col-7 ">
+                                        <div style="font-weight: bold;">登録番号検索</div>
                                         <div class="row">
-                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-3"></div>
+                                            <div class="col-10 ">
+                                                <input class="fu-input" type="text">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-3"></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-1 chat-r"><img height="30px" src="../assets/img/message.png" alt=""></div>
+                                    <div class="col-5 ">
+                                      <div class="row">
+                                        <div class="col-10">
+                                          <div class="com">
+                                            <button class="com-title">完了ボタン</button>
+                                          </div>
                                         </div>
+                                        <div class="col-2">
+                                          <div class="com-rb">
+                                            <button style="width: 56px;background: white;" class="com-btn">完了</button></div>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-7 ">
+                                        <div style="font-weight: bold;">不具合内容検索</div>
                                         <div class="row">
-                                            <div class="col-1 chat-l"><img height="30px" src="../assets/img/message.png" alt=""></div>
-                                            <div class="col-8"><div class="button">draft</div></div>
-                                            <div class="col-3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="chat-input">
-                                            <input type="text" maxlength="50" placeholder="メッセージを入力">
-                                            <span>0/50</span><img height="30px" src="../assets/img/send.png" alt="">
+                                            <div class="col-10 ">
+                                                <input class="fu-input" type="text">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 pad-10 mt-4">
-                                <div style="font-weight: bold;">経過観察一覧</div>
+                                <div style="font-weight: bold;">車両検索一覧</div>
                                 <div style="text-align: right;"><button class="add-btn">追加する+</button></div>
                                 <div class="row" style="height: 200px;">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tr style="border-bottom: 1px solid #4F4F4F;">
                                                 <th>No</th>
+                                                <th>登録番号</th>
                                                 <th>不具合内容</th>
-                                                <th>ステータス</th>
-                                                <th>初回登録日</th>
-                                                <th>更新日</th>
-                                                <th>連携</th>
+                                                <th>部品カテゴリ</th>
+                                                <th>入荷予定日</th>
+                                                <th>一括入荷</th>
                                             </tr>
                                             <tr style="border-bottom: 1px solid white;">
                                                 <td>1</td>

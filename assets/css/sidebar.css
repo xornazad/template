@@ -5,6 +5,13 @@
   background: white;
   border: 1px solid #4F4F4F;
 }
+.attach-btn{
+  border: 1px solid #4F4F4F; 
+  border-radius: 15px;
+  height: 35px;
+  width: 120px;
+  padding: 0px;
+}
 .com{
   border: 1px solid #4F4F4F;
   border-radius: 15px;
@@ -12,8 +19,14 @@
 .com-r{
   border: 1px solid #4F4F4F;
   border-radius: 15px;
+  margin: 4px 68px 0 -85px;
+  height: 23px;
+}
+.com-rb{
+  border-radius: 15px;
   margin: 4px 35px 0 -82px;
   height: 23px;
+  padding-top: 1px;
 }
 .com-span{
   border: 1px solid #4F4F4F;
@@ -47,7 +60,12 @@ margin: -1px 0px 0px -2px;
 }
 .ser-input{
   border-radius: 12px;
-  width: 250px;
+  width: 350px;
+  border: 1px solid #4F4F4F;
+}
+.fu-input{
+  border-radius: 12px;
+  width: 230px;
   border: 1px solid #4F4F4F;
 }
 .fol-div{
@@ -123,9 +141,9 @@ margin: -1px 0px 0px -2px;
   text-align: center;
 }
 .body {
-  background-color: #4F4F4F;
+  background-color: white;
   color: #4F4F4F;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 1px;
   height: 100vh;
   overflow-y: auto;
   flex-grow: 1;
@@ -184,11 +202,8 @@ margin: -1px 0px 0px -2px;
   margin: 0 2% 0 5%;
 }
 #toggleSidebarBtn {
-  position: absolute;
-  top: 48px;
-  left: 338px;
-  z-index: 999;
   color: white;
+  padding: 2px;
 }
 .ul {
     list-style-type: none;
@@ -201,10 +216,16 @@ margin: -1px 0px 0px -2px;
   transition: left 0.3s ease;
 } */
 @media screen and (max-width: 992px) {
-  #toggleSidebarBtn {
+  /* #toggleSidebarBtn {
     position: absolute;
     top: 48px;
     left: 170px;
     z-index: 999;
-  }
+  } */
+   .com-r{
+  border: 1px solid #4F4F4F;
+  border-radius: 15px;
+  margin: 4px 45px 0 -85px;
+  height: 23px;
+}
 }
